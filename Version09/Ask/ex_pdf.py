@@ -6,7 +6,7 @@ ak = akasha.ask(model="openai:gpt-4o")
 
 # 從參考資料來回答問題
 response = ak(
-    prompt="做一個約 200 字的摘要",
+    prompt="做一個約 200 字的摘要，要讓幼兒園也能看得懂",
     info=["1472-6874-10-7.pdf"],
 )
 

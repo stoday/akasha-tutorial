@@ -1878,15 +1878,15 @@ wheels = [
 
 [[package]]
 name = "langchain-mcp-adapters"
-version = "0.1.1"
+version = "0.0.5"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "langchain-core" },
     { name = "mcp" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/b0/de/62a6ee2c21f74eed961773e75a4e3170f8abc79fd5fd7a1b4e2ea07f4c04/langchain_mcp_adapters-0.1.1.tar.gz", hash = "sha256:e43ddf06e4ce237ad80f5c91d0efa7fd7c845b274a5a07e7e8a7f9d7239331d7", size = 17359, upload-time = "2025-05-20T14:20:35.025Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/bb/84/60cfc76dbe5e7a6721eacae531955e5aedcd65febb3398ca3a46e8d2ab1b/langchain_mcp_adapters-0.0.5.tar.gz", hash = "sha256:d05de412b2910ec652f8ef6008fb7f8ec80db9e4f06593db1d613ebafc15b83d", size = 8517, upload-time = "2025-03-15T21:34:59.926Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/30/68/13405f252b38a8e1bd7ef345907a4e0eda535c2ca36fe4d6821fc7e9f5de/langchain_mcp_adapters-0.1.1-py3-none-any.whl", hash = "sha256:81594b265d824012040ebd24056fbdb5aabf0b46f780e369ed132421e3411e4d", size = 12100, upload-time = "2025-05-20T14:20:34.236Z" },
+    { url = "https://files.pythonhosted.org/packages/87/b7/96da8de4776160d41eb4b24e61b3056ed793d4414008f2e69b14427e5f8a/langchain_mcp_adapters-0.0.5-py3-none-any.whl", hash = "sha256:8601beb4692c64a8ef8961468ec73c24558804ff09a7c54612bd2d5225ac4ff8", size = 8402, upload-time = "2025-03-15T21:34:58.802Z" },
 ]
 
 [[package]]
@@ -2172,7 +2172,7 @@ wheels = [
 
 [[package]]
 name = "mcp"
-version = "1.9.0"
+version = "1.4.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "anyio" },
@@ -2180,14 +2180,13 @@ dependencies = [
     { name = "httpx-sse" },
     { name = "pydantic" },
     { name = "pydantic-settings" },
-    { name = "python-multipart" },
     { name = "sse-starlette" },
     { name = "starlette" },
-    { name = "uvicorn", marker = "sys_platform != 'emscripten'" },
+    { name = "uvicorn" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/bc/8d/0f4468582e9e97b0a24604b585c651dfd2144300ecffd1c06a680f5c8861/mcp-1.9.0.tar.gz", hash = "sha256:905d8d208baf7e3e71d70c82803b89112e321581bcd2530f9de0fe4103d28749", size = 281432, upload-time = "2025-05-15T18:51:06.615Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/50/cc/5c5bb19f1a0f8f89a95e25cb608b0b07009e81fd4b031e519335404e1422/mcp-1.4.1.tar.gz", hash = "sha256:b9655d2de6313f9d55a7d1df62b3c3fe27a530100cc85bf23729145b0dba4c7a", size = 154942, upload-time = "2025-03-14T09:52:15.54Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/a5/d5/22e36c95c83c80eb47c83f231095419cf57cf5cca5416f1c960032074c78/mcp-1.9.0-py3-none-any.whl", hash = "sha256:9dfb89c8c56f742da10a5910a1f64b0d2ac2c3ed2bd572ddb1cfab7f35957178", size = 125082, upload-time = "2025-05-15T18:51:04.916Z" },
+    { url = "https://files.pythonhosted.org/packages/e8/0e/885f156ade60108e67bf044fada5269da68e29d758a10b0c513f4d85dd76/mcp-1.4.1-py3-none-any.whl", hash = "sha256:a7716b1ec1c054e76f49806f7d96113b99fc1166fc9244c2c6f19867cb75b593", size = 72448, upload-time = "2025-03-14T09:52:13.669Z" },
 ]
 
 [[package]]
@@ -3299,15 +3298,6 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/da/db/0b3e28ac047452d079d375ec6798bf76a036a08182dbb39ed38116a49130/python-magic-0.4.27.tar.gz", hash = "sha256:c1ba14b08e4a5f5c31a302b7721239695b2f0f058d125bd5ce1ee36b9d9d3c3b", size = 14677, upload-time = "2022-06-07T20:16:59.508Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/6c/73/9f872cb81fc5c3bb48f7227872c28975f998f3e7c2b1c16e95e6432bbb90/python_magic-0.4.27-py2.py3-none-any.whl", hash = "sha256:c212960ad306f700aa0d01e5d7a325d20548ff97eb9920dcd29513174f0294d3", size = 13840, upload-time = "2022-06-07T20:16:57.763Z" },
-]
-
-[[package]]
-name = "python-multipart"
-version = "0.0.20"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/f3/87/f44d7c9f274c7ee665a29b885ec97089ec5dc034c7f3fafa03da9e39a09e/python_multipart-0.0.20.tar.gz", hash = "sha256:8dd0cab45b8e23064ae09147625994d090fa46f5b0d1e13af944c331a7fa9d13", size = 37158, upload-time = "2024-12-16T19:45:46.972Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/45/58/38b5afbc1a800eeea951b9285d3912613f2603bdf897a4ab0f4bd7f405fc/python_multipart-0.0.20-py3-none-any.whl", hash = "sha256:8a62d3a8335e06589fe01f2a3e178cdcc632f3fbe0d492ad9ee0ec35aab1f104", size = 24546, upload-time = "2024-12-16T19:45:44.423Z" },
 ]
 
 [[package]]
@@ -4678,12 +4668,14 @@ source = { virtual = "." }
 dependencies = [
     { name = "akasha-terminal" },
     { name = "ipykernel" },
+    { name = "langchain-mcp-adapters" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "akasha-terminal", git = "https://github.com/iii-org/akasha.git?rev=ceres" },
     { name = "ipykernel", specifier = ">=6.29.5" },
+    { name = "langchain-mcp-adapters", specifier = "==0.0.5" },
 ]
 
 [[package]]

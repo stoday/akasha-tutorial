@@ -1,7 +1,6 @@
 import akasha
 import akasha.helper as ah
 
-
 PROMPT = "企業在導入生程式 AI 要注意什麼？"
 
 # create a RAG object and call it ###
