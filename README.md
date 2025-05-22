@@ -1,2 +1,0 @@
-# akasha-tutorial
-akasha tutorial

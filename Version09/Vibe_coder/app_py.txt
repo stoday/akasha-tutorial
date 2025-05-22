@@ -1,0 +1,39 @@
+# 用 akasha 與 streamlit 寫的對話機器人範例程式碼
+
+import akasha
+import streamlit as st
+
+
+ak = akasha.ask(
+    model="openai:gpt-4o", 
+    max_input_tokens=8000, 
+    keep_logs=True, verbose=True
+)
+
+st.title("ChatGPT-like clone")
+
+
+if "messages" not in st.session_state:
+    st.session_state.messages = []
+
+for message in st.session_state.messages:
+    with st.chat_message(message["role"]):
+        st.markdown(message["content"])
+
+if prompt := st.chat_input("What is up?"):
+    st.session_state.messages.append({"role": "user", "content": prompt})
+    with st.chat_message("user"):
+        st.markdown(prompt)
+
+    with st.chat_message("assistant"):
+        with st.spinner("分析中...`"):
+            stream = res = ak(    
+                # prompt=f"請問申請 SBIR 的條件是什麼？",
+                prompt=f"幫我用 streamlit 與 akasha 完成寫程式日物任務: {prompt}。除了程式碼外不要有其他說明好讓我可以直接使用變成可執行的檔案。",
+                info=["https://www.moea.gov.tw/Mns/populace/Apply/Apply.aspx?menu_id=32814&apply_id=64",
+                      ],
+                stream=True,
+            )
+            response = st.write_stream(stream)
+        
+    st.session_state.messages.append({"role": "assistant", "content": response})
